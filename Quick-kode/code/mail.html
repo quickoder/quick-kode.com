@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mail</title>
+ 
+      <style>
+          body{
+          font-family:sans-serif;    
+          background-color: black;
+          }
+          
+          
+          
+          .sub,.text{
+           background-color:rgb(210, 210, 210);   
+          }
+      
+          .link{
+           background-color:rgb(32, 32, 32);     
+          width: 42px;
+          height:20px;
+          }
+      
+          h2{
+              
+              color: gray;
+          }
+          
+          .home{
+            position: absolute;  
+            top: 0px;
+            left:350px;  
+              
+          }
+          
+      </style>
+    
+    </head>
+  <body>
+      
+          <a href="https://quick-kode.000webhostapp.com">
+            
+            
+        <img class = "home" src = 'https://quick-kode.000webhostapp.com/home%20icon' alt = "home icon" width = "75px">
+      
+      </a>  
+      
+      
+      <h2>send to:<h2>
+         <form id = "who">
+  <input type="email" id="sendTo" name="sendTo" required>
+</form>
+      
+
+      <h2>subject:</h2>
+     
+          <form id = "who">
+  <input type="text" id="sub" name="sub" required>
+</form>
+          
+      <h2>body:</h2>
+      
+          
+          <form>
+          <textarea id="message" name="message" rows="20" cols="50" required></textarea>
+          </form>
+          
+          
+          
+          <button class = "send">done</button>
+           
+      <div class="link">
+      </div>
+
+          
+          
+          
+          
+          
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      
+          
+          
+  
+          
+      <script>
+          
+         $(".link").hide();   
+         $(".send").show();  
+          
+          var $na;
+        
+          var sub;
+          var text;  
+          var email;
+          var link;
+          
+          
+          var f = function () {
+         $(".send").hide(); 
+         $(".link").show();   
+           
+              
+          sub  = $("#sub").val();
+          text = $("#message").val();  
+          email = $("#sendTo").val();
+          link = "mailto:"+email+"?subject="+sub +"&body="+text;
+            
+              
+              
+              $na = $("<a>")
+    .attr("href",link)
+                .text("Send")
+                .appendTo(".link"); 
+          
+          $(".text").text(text);
+          $(".sub").text(sub);   
+          
+         }
+          
+       
+        
+          
+          
+          $(".send").on("click",f);   
+          
+          
+         
+         
+      </script>
+      
+  </body>
+</html>

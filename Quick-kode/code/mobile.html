@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quick-Kode mobile</title>
+    
+      <style>
+          
+          
+          
+          
+          
+          h2{
+          
+           color:white;
+            position: absolute;
+              left: 30px;
+              
+          }
+          
+          
+          
+          body{
+        font-family: sans-serif;
+           background:rgb(55, 55, 55);
+              
+          }
+          
+          
+        
+          .GAME1{
+            width:250px;  
+            height: 250px;
+            position: absolute;  
+            top:50px;
+            left: 30px;
+          }  
+         
+          
+          .GAME2{
+            width:250px;  
+            height: 250px;
+            position: absolute;  
+            top:330px;
+            left: 30px;
+          }  
+          
+          
+          .GAME3{
+            width:250px;  
+            height: 250px;
+            position: absolute;  
+            top:610px;
+            left: 30px;
+          }  
+          
+          .rg{
+           top: -6px;     
+          } 
+          
+          .rv{
+           top: 850px;   
+              
+          }
+          
+          .rog{
+           top: 1710px;      
+          }
+          
+          
+          .vid1{
+             position: absolute;  
+            top:905px;
+            left: 30px;  
+            width:250px;  
+            height: 250px;     
+          }
+          
+        .vid2{
+             position: absolute;  
+            top:1185px;
+            left: 30px;  
+            width:250px;  
+            height: 250px;     
+          }  
+          
+          .vid3{
+             position: absolute;  
+            top:1465px;
+            left: 30px;  
+            width:250px;  
+            height: 250px;     
+          }  
+          
+          .icon1{
+           position: absolute;   
+           top:1770px;
+           left: 20px;
+          }
+          
+           .icon2{
+           position: absolute;   
+           top:1770px;
+           left:150px;
+          }
+          
+          .icon3{
+           position: absolute;   
+           top:1890px;
+           left: 20px;
+          }
+          
+          
+          .icon4{
+           position: absolute;   
+           top:1890px;
+           left:150px;
+          }
+          
+          .icon5{
+           position: absolute;   
+           top:2010px;
+           left: 20px;
+          }
+          
+      </style>
+      
+      
+    </head>
+  <body>
+
+      
+      <h2 class="rg">Recomended Games:</h2>
+      
+     <a href="" class="gl1">
+        <img class = "GAME1" src ="">
+        </a> 
+      
+      <a href="" class="gl2">
+        <img class = "GAME2" src ="">
+        </a> 
+      
+      <a href="" class="gl3">
+        <img class = "GAME3" src ="">
+        </a> 
+      
+      
+      <h2 class="rv">Recomened Videos:</h2>
+      
+      
+      
+      
+      <iframe class="vid1" width="170" height="170" src="" title="test vid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      <iframe class="vid2" width="170" height="170" src="" title="test vid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      
+      <iframe class="vid3" width="170" height="170" src="" title="test vid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      
+      
+      <h2 class="rog">Other apps:</h2>
+      
+      <a href="https://quick-kode.000webhostapp.com/mail">
+        
+  <img class = "icon1" src = 'https://quick-kode.000webhostapp.com/mail.png' alt = "Email" width = "100px"></a>
+      
+      <a href="https://quick-kode.000webhostapp.com/games">
+            
+        <img class = "icon2" src = 'https://quick-kode.000webhostapp.com/games.png' alt = "Games" width = "100px">
+        
+            </a>
+      
+      <a href="https://quick-kode.000webhostapp.com/VidStream%20mobile">
+            
+            
+        <img class = "icon3" src = 'https://quick-kode.000webhostapp.com/vidstream.png' alt = "Vidstream" width = "100px">
+        
+            
+        </a>
+      
+      <a href="https://quick-kode.000webhostapp.com/search">
+        
+        <img class = "icon4" src =  'https://quick-kode.000webhostapp.com/search.png' alt = "Search" width = "100px">
+             
+        </a>
+      
+      
+      <a href="https://quick-kode.000webhostapp.com/pc">
+            
+            
+        <img class = "icon5" src = 'https://quick-kode.000webhostapp.com/pc%20icon' alt = "pc" width = "100px">
+      
+      
+      </a>
+      
+      
+      
+      
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <script>
+      
+      var setgame = function(game,image,link){
+                $(".GAME"+game).attr("src",image);
+                 $(".gl"+game).attr("href",link);                
+        }
+       var setvid = function(num,link){
+            $(".vid"+num).attr("src",link);   
+                
+            }
+      </script>
+      
+      <script>
+      
+      
+      
+      setgame(1,"https://uploads.scratch.mit.edu/get_image/project/926974222_480x360.png",
+                "https://scratch.mit.edu/projects/926974222/fullscreen/");
+      
+      
+      setgame(2,"https://uploads.scratch.mit.edu/get_image/project/861733543_144x108.png",
+                "https://scratch.mit.edu/projects/861733543/fullscreen/");
+      
+      setgame(3,"https://uploads.scratch.mit.edu/get_image/project/918833608_480x360.png",
+                "https://scratch.mit.edu/projects/918833608/fullscreen/");
+      
+       setvid(1,"https://www.youtube.com/embed/SrGENEXocJU");
+          
+       setvid(2,"https://www.youtube.com/embed/l-nMKJ5J3Uc");   
+          
+       setvid(3,"https://www.youtube.com/embed/CWbV3NItSdY");
+          
+          
+          
+          
+          
+      </script>
+      
+      
+  </body>
+</html>

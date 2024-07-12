@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+ 
+  
+    <title>Quick-Kode</title>
+      
+      <style>
+          body{
+       
+        background-color: #505050;  }
+          
+          
+          .mobile{
+           position: absolute;    
+           left: 660px;
+          }
+          
+      
+          
+           .num1{
+          position: absolute;
+           top:150px;   
+          }
+          
+             
+          .num2{
+          position: absolute;
+            top:250px;
+          }
+         .num3{
+          position: absolute;
+             top:350px;
+          }
+      
+           .num4{
+          position: absolute;
+              top:450px;
+          } 
+          
+          .pannle{
+            width: 90px;  
+          position: absolute;
+           left: 8px;   
+          }
+          .ps{
+           background-color:#6e6e6e;   
+            width: 110px;    
+          height: 440px;
+              position: absolute;
+          top: 125px;
+              left: 0px;
+          }
+          
+          .RGP{
+           background-color:#575757;   
+            width: 600px;    
+          height: 200px;
+              position: absolute;
+         bottom: 85px;
+              left: 150px;
+          }
+          
+          .RVP{
+           background-color:#575757;   
+            width: 600px;    
+          height: 190px;
+              position: absolute;
+         top: 110px;
+              left: 150px;
+          }
+          
+          
+          .rg{
+            color: white;
+            font-family: sans-serif;  
+            position: absolute;
+            bottom:270px;
+            left:200px;
+          }
+          
+          .rv{
+            color: white;
+            font-family: sans-serif;  
+            position: absolute;
+            top:60px;
+            left:200px;
+          }
+          
+          
+          
+          
+          .GAME1{
+           height: 170px;
+           width: 170px;   
+           position: absolute;   
+           bottom: 100px;  
+           left: 160px;
+          }
+          
+          .GAME2{
+           height: 170px;
+           width: 170px;   
+           position: absolute;   
+           bottom: 100px;  
+           left: 360px;
+          }
+          
+          
+         .GAME3{
+           height: 170px;
+           width: 170px;   
+           position: absolute;   
+           bottom: 100px;  
+           left: 560px;
+          } 
+          
+          .vid1{
+             position: absolute; 
+             top: 120px; 
+             left: 160px; 
+          }
+          
+         .vid2{
+             position: absolute; 
+             top: 120px; 
+             left: 360px; 
+          } 
+          
+          .vid3{
+             position: absolute; 
+             top: 120px; 
+             left: 560px; 
+          } 
+       
+      </style>
+    </head>
+    <body>
+        
+        
+        <a href="https://quick-kode.000webhostapp.com/mobile">
+        
+        <img class = "mobile" src = 'https://quick-kode.000webhostapp.com/phone%20icon' alt = "Mobile" width = "90px"></a>
+        
+        
+        <h2 class="rv">Recomended videos:</h2>
+        <div class = "ps"></div>
+        
+        
+      
+        
+        <a href="https://quick-kode.000webhostapp.com/mail">
+        
+  <img class = "pannle num1" src = 'https://quick-kode.000webhostapp.com/mail.png' alt = "Email" width = "100px"></a>
+        
+        
+        <a href="https://quick-kode.000webhostapp.com/games">
+            
+        <img class = "pannle num2" src = 'https://quick-kode.000webhostapp.com/games.png' alt = "Games" width = "100px">
+        
+            </a>
+            
+        
+        <a href="https://quick-kode.000webhostapp.com/vidstream">
+            
+            
+        <img class = "pannle num3" src = 'https://quick-kode.000webhostapp.com/vidstream.png' alt = "Vidstream" width = "100px">
+        
+            
+        </a>
+        
+          
+       
+        
+         <a href="https://quick-kode.000webhostapp.com/search">
+        <img class = "pannle num4" src =  'https://quick-kode.000webhostapp.com/search.png' alt = "Search" width = "100px">
+             
+        </a>
+        
+        
+        <h2 class="rg">Recomended games:</h2>
+        <div class = "RGP"></div>
+        
+        
+        
+        
+        <a href="" class="gl1">
+        <img class = "GAME1" src ="">
+        </a>
+            
+        <a href="" class="gl2">
+        <img class = "GAME2" src ="">
+        </a>
+        
+        <a href="" class="gl3">
+        <img class = "GAME3" src ="">
+        </a>
+        
+               <div class="RVP"></div> 
+        
+        <iframe class="vid1" width="170" height="170" src="" title="test vid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+                <iframe class="vid2" width="170" height="170" src="" title="test vid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <iframe class="vid3" width="170" height="170" src="" title="test vid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+
+        
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+       
+        <script>
+        
+       
+            
+            var setvid = function(num,link){
+            $(".vid"+num).attr("src",link);   
+                
+            }
+            
+            
+            
+            
+        var setgame = function(game,image,link){
+                $(".GAME"+game).attr("src",image);
+                 $(".gl"+game).attr("href",link);                
+        }
+        
+        </script> 
+        
+        
+        
+        <script>
+        
+         //change games and vids over here   
+            
+            
+      setvid(1,"https://www.youtube.com/embed/SrGENEXocJU");
+        
+      setvid(2,"https://www.youtube.com/embed/l-nMKJ5J3Uc");
+    
+      setvid(3,"https://www.youtube.com/embed/CWbV3NItSdY");
+            
+            
+      setgame(1,"https://uploads.scratch.mit.edu/get_image/project/926974222_480x360.png",
+                "https://scratch.mit.edu/projects/926974222/fullscreen/");
+       
+            
+      setgame(2,"https://uploads.scratch.mit.edu/get_image/project/861733543_144x108.png",
+                "https://scratch.mit.edu/projects/861733543/fullscreen/");
+        
+            
+      setgame(3,"https://uploads.scratch.mit.edu/get_image/project/918833608_480x360.png",
+                "https://scratch.mit.edu/projects/918833608/fullscreen/");
+        
+            
+        </script>
+        
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Games</title>
+  
+ <style>
+   
+     
+     body {
+  margin: 0;
+  font-family: Arial,sans-serif;
+}
+
+    </style>   
+    
+    <style>
+    .gi{
+        position: absolute; 
+        width: 150px;
+      height: 150px;  
+    }
+    
+    body{
+    background-color: rgb(63, 63, 63);
+        
+        
+    }
+        
+        
+        .home{
+          
+        position: absolute;
+        bottom: 0px;
+        left:0px;
+        }    
+
+    
+    </style>
+    
+
+<style>    
+    
+  
+    #i1{
+      top:10px;
+      left: 10px;
+    }
+    
+    #i2{
+      top:10px;
+      left: 180px;
+    }
+    
+    #i3{
+      top:10px;
+      left: 350px;
+    }
+    
+    
+    
+    </style>
+    
+</head>
+<body>
+
+
+    
+<a href="https://quick-kode.000webhostapp.com">
+            
+            
+        <img class = "home" src = 'https://quick-kode.000webhostapp.com/home%20icon' alt = "home icon" width = "75px">
+      
+      </a>    
+    
+    
+
+    
+    
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script>
+      //dont touch
+      
+      
+      var gln = 1;
+      
+    var newLink;  
+   
+ var cl = function(site){
+     
+ newLink = $('<a/>', {
+      
+    href: site,
+    text: '',
+    class: 'gl'+ gln
+  });
+
+  $('body').append(newLink);       
+     
+     
+ }    
+    
+ 
+  var nm = function(img)  {
+       
+     const newImage = $('<img/>');
+
+  newImage.attr({
+    src: img,
+    id: "i"+gln,
+    class: "gi",    
+  });
+
+  $(".gl"+gln).prepend(newImage);    
+       
+   } 
+
+  
+
+ 
+ 
+var newg = function(link,img){
+
+ cl(link);     
+ nm(img);    
+ gln++;
+      
+}
+
+    </script>      
+  
+    
+    
+    
+    
+    
+  <script>
+   
+      
+      newg("https://scratch.mit.edu/projects/926974222/fullscreen/",
+ "https://uploads.scratch.mit.edu/get_image/project/926974222_100x80.png");     
+    
+    newg("https://scratch.mit.edu/projects/861733543/fullscreen/",
+ "https://uploads.scratch.mit.edu/get_image/project/861733543_144x108.png");     
+      
+   newg("https://scratch.mit.edu/projects/918833608/fullscreen/",
+ "https://uploads.scratch.mit.edu/get_image/project/918833608_480x360.png");    
+      
+    </script>    
+
+      
+ 
+  
+
+</body>
+</html>

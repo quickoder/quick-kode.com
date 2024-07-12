@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vid Stream</title>
+    <style>
+        
+        body {
+         background-color: rgb(52, 52, 52);
+         
+     }
+    
+     .rb{
+         width: 50px;
+         height: 30px;
+         border-radius: 50%;
+     }
+     
+     
+     
+     .next{
+         position: absolute;
+         top:300px;
+         left:945px;
+         
+     }
+     .vid {
+         position: absolute;
+         top:75px;
+         left:500px;
+         width:400px;
+         height:500px;
+     }
+     
+     .back{
+      position: absolute;
+         top:300px;
+         left:405px; 
+         
+       
+     }
+     .side-image {
+    width:150px;
+     position: absolute;
+    left: 0px;
+    top: 0px;
+     }
+      
+        .home{
+            
+         position: absolute;   
+        left: 1000px;
+        top: -0px;
+            
+        } 
+      
+       .vst{
+       
+        width: 120px;
+        position: absolute;   
+        left: 180px;
+        top: -0px;
+            
+        } 
+      
+      
+      </style>
+      
+     
+   
+    </head>
+  <body>
+           
+
+      <img src="https://quick-kode.000webhostapp.com/vidstream.png" alt="Image description" class="side-image">
+      
+      
+      <a href="https://quick-kode.000webhostapp.com">
+            
+            
+        <img class = "home" src = 'https://quick-kode.000webhostapp.com/home%20icon' alt = "home icon" width = "100px">
+      
+      </a>
+      
+      
+      <a href="https://quick-kode.000webhostapp.com/VidStream%20trending">
+            
+            
+        <img class = "vst" src = "https://quick-kode.000webhostapp.com/VidStream%20Trending%20icon.png" alt = "vidstrem trending icon" width = "100px">
+      
+      </a> 
+      
+      
+      
+      
+      
+      
+      
+   <button class="back">back</button>
+      
+    <iframe class="vid" width="150" height="190" src="" title="test vid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+    
+      <button class="next">next</button> 
+    
+   
+      
+      
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+      
+      
+    <script>
+     
+    var video = 0;
+      
+  var vids = [];  
+   
+    var addvid = function(vn){   
+      vids.push(vn);     
+    }
+      </script>
+      
+      
+      
+      
+      <script>
+  
+      
+    addvid("5Y_64iPJ9OM");      
+    addvid("878wTgltfec");
+    addvid("v4PMyzVaoj0");
+    addvid("jdK9TWvl3bY");
+    addvid("tK2Y0rB4fTU");    
+    addvid("xqO1GeCMIcA");        
+    addvid("hnP0-ORHVis"); 
+    addvid("QeM6Mgfi7M4");     
+    addvid("F4l6o8tbxBw");      
+    addvid("hSH0va1H4GQ");      
+    addvid("0H2Pf-Ezgds");    
+    addvid("qvHjMVNFnXM");
+    addvid("LFZU7b-ya-0");  
+    addvid("JUOpz6Ad-OQ");
+    addvid("RhmFcYBgl2M");
+    addvid("edjNllk-Dro");
+    addvid("Cpqf9XgJY5o");
+    addvid("JLLFS83aG4U");
+    addvid("pvf34NaxJr0");  
+    addvid("w740cnTDv7I");
+    addvid("a8bXmV5eIFg");        
+    addvid("abYZvpWkmL0");      
+    addvid("O9REUtrEfyI");     
+    addvid("IahCMMYyy4w");    
+    addvid("9gzEe9pxQYQ");
+    addvid("hMtuvYjoChc");      
+    addvid("5Y_64iPJ9OM");      
+    
+          
+      </script>
+      
+      
+      
+      
+      
+      <script>
+  var  openvid = function(vid){
+          $(".vid").attr("src","https://www.youtube.com/embed/"+vid);
+        }
+ 
+ openvid(vids[video]); 
+  
+  $(".next").click(function() {
+   
+      if(video<vids.length-1){
+        video++;  
+        openvid(vids[video]);  
+      }  
+  });
+
+          
+$(".back").click(function() {
+   
+      if(video>0){
+        video=video-1;  
+        openvid(vids[video]);  
+      }  
+  });
+          
+  
+</script>
+      
+  </body>
+</html>

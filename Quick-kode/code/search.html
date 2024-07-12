@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>product search</title>
+        
+        
+        
+    <style>
+    
+        body{
+            background-color:rgb(0, 0, 0);
+        }
+
+
+     
+     .ssearch{
+    
+    color:rgb(34, 48, 33);
+    position:absolute;
+     top:30px;
+     left:274px;   
+     }
+     
+     
+     
+     .ssb{
+         padding-left:5px;
+       border-radius: 14px;
+       border-color:darkgray;
+       position:absolute;
+       left:86px;  
+     top:30px;
+     }
+     
+     .ssp{
+     font-size:25px;
+     margin-bottom:10px;
+     margin-top:5px;
+     position:absolute;
+     top:20px;
+     left:10px;
+     color: darkgray;
+        }
+     
+     
+        .home{
+            
+         position: absolute; 
+         top:0px;  
+         left:390px;   
+        
+        }
+        
+        
+        
+     </style>
+    </head>
+    <body>
+<form>
+
+
+
+      <p class ="ssp">search:</p>
+      <input  class = "ssb" type="text" id="searchResult" name="searchbar"><br>
+  </form>
+<br>
+<button class="ssearch">submit</button>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+ <script>var web = [];
+  var links = []; 
+   var addsite = function(name,link){
+    web.push(name);   
+    links.push(link);   
+   }; 
+</script>
+<script>
+
+addsite("home","https://quick-kode.000webhostapp.com/");
+addsite("mail","https://quick-kode.000webhostapp.com/mail");
+addsite("games","https://quick-kode.000webhostapp.com/games");     
+addsite("Vidsteam","https://quick-kode.000webhostapp.com/vidstream");
+addsite("Vidsteam mobile","https://quick-kode.000webhostapp.com/VidStream%20mobile");
+addsite("Vidsteam trending","https://quick-kode.000webhostapp.com/VidStream%20trending");
+addsite("home: pc","https://quick-kode.000webhostapp.com/pc");
+addsite("home: mobile","https://quick-kode.000webhostapp.com/mobile");
+addsite("fat guys","https://scratch.mit.edu/projects/926974222/fullscreen/");       
+addsite("sonic","https://scratch.mit.edu/projects/861733543/fullscreen/");       
+addsite("flappy mario","https://scratch.mit.edu/projects/918833608/fullscreen/"); 
+   
+   
+    
+</script>
+<script>
+var newthing;
+var results = [];
+var result;
+var lr=[];
+
+
+var searchFor = function(search){
+lr=[];
+results = [];
+for(var i = 0;i<web.length;i++){
+ result = web[i].includes(search);   
+if(result){
+results.push(web[i]);
+lr.push(links[i])
+}
+
+}
+$('h5').remove();
+$('a').remove();
+for(var j = 0;j<results.length;j++){
+         
+         $newthing = $("<h5>")
+                .text("")
+                .appendTo("body"); 
+                
+     $newthing = $("<a>")
+                .attr("href",lr[j])
+                .text(results[j])
+               .addClass("a")
+         .appendTo("body"); 
+    
+}
+             
+             
+             
+             
+}
+ var sb;
+    
+ searchFor("");
+    
+  $(".ssearch").on("click", function() {
+ sb=$("#searchResult").val();
+ searchFor(sb);           
+        });
+
+            
+    </script>
+ 
+
+    </body>
+</html>
